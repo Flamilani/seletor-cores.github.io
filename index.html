@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho Prático do Módulo 1</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <h1><strong>Bootcamp:</strong> Desenvolvedor Full Stack</h1>
+        <h2>Trabalho Prático do Módulo 1 - Fundamentos</h2>
+      </div>
+    </header>
+
+    <main>
+      <div class="componente">
+        <h1 class="titulo">Seletor de Cores RGB (Range)</h1>
+        <div class="controle">
+          <label class="left" for="vermelho">(R) Vermelho:</label>
+          <div class="controle-range">
+            <input
+              class="range"
+              onchange="seletorColor()"
+              id="red"
+              type="range"
+              max="255"
+              step="1"
+              value="0"
+            />
+            <input id="valueRed" class="input-valores" type="number" readonly />
+          </div>
+          <label class="left" for="verde">(G) Verde:</label>
+          <div class="controle-range">
+            <input
+              class="range"
+              onchange="seletorColor()"
+              id="green"
+              type="range"
+              max="255"
+              step="1"
+              value="0"
+            />
+            <input
+              id="valueGreen"
+              class="input-valores"
+              type="number"
+              readonly
+            />
+          </div>
+          <label class="left" for="azul">(B) Azul:</label>
+          <div class="controle-range">
+            <input
+              class="range"
+              onchange="seletorColor()"
+              id="blue"
+              type="range"
+              max="255"
+              step="1"
+              value="0"
+            />
+            <input
+              id="valueBlue"
+              class="input-valores"
+              type="number"
+              readonly
+            />
+          </div>
+        </div>
+        <div id="box" class="resultado">
+          <div id="title-box">
+            <span id="code"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="perfil"><em>Develop by</em> Flavio Milani</div>
+      <div class="redes-sociais">
+        <a href="https://www.linkedin.com/in/flavio-milani/" target="_blank"
+          ><img src="./assets/img/linkedin.png" alt="Linkedin" />
+        </a>
+        <a href="https://github.com/Flamilani" target="_blank"
+          ><img src="assets/img/logotipo-do-github.png" alt="Github" />
+        </a>
+      </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
